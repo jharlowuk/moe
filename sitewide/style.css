@@ -952,3 +952,13 @@ a.btn-draw {
 	border-bottom: 2px dashed #b14943;
 }
 
+button {
+     background:none!important;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     cursor: pointer;
+}
+
