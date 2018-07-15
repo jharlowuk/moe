@@ -134,36 +134,35 @@
 	 	<br><b>Email:</b> enquire@moe.edu
 	 	<br><b>Phone: +44</b> 
 	 	<br><b>Post:</b><br>&nbsp;</p>
-	 	<h4 class="a-left">Have us contact you</h4>
-	 	<p class="a-left">Leave your details below, and we'll drop a call when it's convenient for you.
-	 	<br>&nbsp;</p>	 	
-	 	<div class="spacer"></div>
+	 	<h3>&nbsp;</h3>
 	 	
-	 	<form name="contact" method="POST" netlify>
-	 	  <p>
-	 	    <label>Your Name: <input type="text" name="name" /></label>   
-	 	  </p>
-	 	  <p>
-	 	    <label>Your Email: <input type="email" name="email" /></label>
-	 	  </p>
-	 	  <p>
-	 	    <label>Your Role: <select name="role[]" multiple>
-	 	      <option value="leader">Leader</option>
-	 	      <option value="follower">Follower</option>
-	 	    </select></label>
-	 	  </p>
-	 	  <p>
-	 	    <label>Message: <textarea name="message"></textarea></label>
-	 	  </p>
-	 	  <p>
-	 	    <button type="submit">Send</button>
-	 	  </p>
-	 	</form>
+	 	<form id="nl-form" class="nl-form" name="contact" method="POST" netlify>
+	 	<h3>My name is <input type="text" name="Name" placeholder="your name" data-subline="For example: <em>John Appleseed</em> or <em>Kate Smith</em>"/>
+	 	and I work for <input type="text" name="Organisation" placeholder="organisation name" data-subline="For example: <em>Harrison School</em> or <em>Camp Wombat</em>"/>.
+	 	<br><br>We are interested in
+	 	  	<select>
+	 	  		<option value="1" selected>Expedition</option>
+	 	  		<option value="2">Journey</option>
+	 	  		<option value="3">Service Learning</option>
+	 	  		<option value="4">Overlanding</option>
+	 	  		<option value="2">Custom Programs</option>
+	 	  	</select>
+	 	programs in <input type="text" name="Venue" placeholder="desired venue" data-subline="For example: <em>Snowdonia</em> or <em>The White Mountains</em>"/>.
+	 	<br><br>Please contact me by
+	 	  	<select>
+	 	  		<option value="1" selected>phone</option>
+	 	  		<option value="2">email</option>
+	 	  	</select>
+	 	at <input type="text" name="Contact" placeholder="contact details" data-subline="For example: <em>+1 XXX-XXX-XXXXX</em> or <em>info@example.com</em>"/>.
+	 	</h3>
+	 	<div data-netlify-recaptcha></div>
+	 	<a class="btn-draw" href="get-started/index.html" type="submit"><span>Submit</span></a></form>
 	 	
 	</div>
 
 </section>
 
+<div class="spacer"></div>
 
 <!-- SITEWIDE FOOTER -->
 <footer data-stellar-background-ratio="0.6">
