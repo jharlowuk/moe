@@ -1,3 +1,9 @@
+//Screen size
+if ( $(window).width() > 739) {      
+  //Add your javascript for large screens here 
+
+
+//Parralax
 ;(function($, window, document, undefined) {
 
 	var pluginName = 'stellar',
@@ -649,3 +655,10 @@
 	// Expose the plugin class so it can be modified
 	window.Stellar = Plugin;
 }(jQuery, this, document));
+
+//Screen size
+
+} 
+else {
+  //Add your javascript for small screens here 
+}

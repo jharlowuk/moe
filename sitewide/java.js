@@ -24,10 +24,6 @@ $(window).load(function(){
 
 /* STELLAR */
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- parallaxElements: true,
-}else
-{
 $(function(){
 	$.stellar({
 		horizontalScrolling: false,
@@ -38,5 +34,3 @@ $(function(){
 $.stellar({
   responsive: true
 });
-}
-
