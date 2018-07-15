@@ -20,31 +20,14 @@ $(window).load(function(){
         $('.offcanvas-overlay').removeClass('on');
     });
     
-    
-/* Header animation */
-
-
-$(window).scroll(function () {
-    var sc = $(window).scrollTop()
-	if($('.landscape').length == 0 ){
-    	if (sc > -1) {
-           $("#header-sroll").addClass("small")
-   		} else {
-           $("#header-sroll").removeClass("small")
-    	}
-	}
-	else{
-    	if (sc > 700) {
-           $("#header-sroll").addClass("small")
-   		} else {
-           $("#header-sroll").removeClass("small")
-    	}
-	}
-});
 
 
 /* STELLAR */
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ parallaxElements: true,
+}else
+{
 $(function(){
 	$.stellar({
 		horizontalScrolling: false,
@@ -55,3 +38,5 @@ $(function(){
 $.stellar({
   responsive: true
 });
+}
+
