@@ -333,7 +333,7 @@ li  {
     }
         
 .shad  {
-        text-shadow: 0.25em 0.25em 0.5em rgba(10,10,10,0.50); }
+        text-shadow: 0em 0em 1em rgba(10,10,10,0.50); }
         
 a:link {color: black;}      /* unvisited link */
        a:visited {color: black;}   /* visited link */
