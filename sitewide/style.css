@@ -180,12 +180,6 @@ body {
     width:auto !important;
 }
 
-@media screen and (orientation: portrait) {
-    .header {
-       height:80px;
-    }
-}
-
 /* LANDSCAPE */
 .landscape {
         position: absolute; 
@@ -194,14 +188,16 @@ body {
 		padding: 0;
         }
         
-@media screen and (orientation: portrait) {
+@media only screen and (max-width: 960px) {
     .landscape {
        display:none;
+	   height: 0px;
+	   width: 0px;
     }
 }
 
 .landscape + #content {
-        top:90%;
+        top:100%;
 }
 
 
