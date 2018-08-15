@@ -595,6 +595,13 @@ a.under{
 
 .text-overlay-block {
     position: absolute;
+    bottom: 25%;
+    left:20%;
+    animation-fill-mode: forwards;
+}
+
+.multi-text-overlay-block {
+    position: absolute;
     bottom: 10%;
     left:20%;
     animation-fill-mode: forwards;
