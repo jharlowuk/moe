@@ -428,7 +428,7 @@ a.under{
   background-size: 100% .25rem;
 }
        
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1080px) {
    h1 {
        font-size:2.5em; }
        
