@@ -229,6 +229,10 @@ body {
 	filter: blur(20px);
     transform:scale(.95);
 	}
+
+.overflow-hide {
+  overflow: hidden;
+}
         
 section {
 	padding: 2em 6em;
