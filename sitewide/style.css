@@ -226,7 +226,7 @@ body {
 	}
 
 .blur.on {
-	filter: blur(20px);
+	filter: blur(15px);
     transform:scale(.95);
 	}
 
