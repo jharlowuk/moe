@@ -8,23 +8,23 @@
 		margin: 0;
 		padding: 0;
         }
-        
+
 body {
     	background-color: #EBEDE8;
         font-size:16px;
         }
-        
+
 /* PRELOADER */
-.js div#preloader { 
-     position: fixed; 
+.js div#preloader {
+     position: fixed;
      margin:0;
      padding:0;
-     z-index: 1003; 
-     width: 100%; 
-     height: 100%; 
-     overflow: visible; 
+     z-index: 1003;
+     width: 100%;
+     height: 100%;
+     overflow: visible;
      background: #000F08
-                no-repeat center center; 
+                no-repeat center center;
      }
 
 /* MENU */
@@ -182,12 +182,12 @@ body {
 
 /* LANDSCAPE */
 .landscape {
-        position: absolute; 
+        position: absolute;
 		width:100%;
         margin: 0;
 		padding: 0;
         }
-        
+
 @media only screen and (max-width: 960px) {
     .landscape {
        display:none;
@@ -233,11 +233,11 @@ body {
 .overflow-hide {
   overflow: hidden;
 }
-        
+
 section {
 	padding: 2em 6em;
 }
-        
+
 @media screen and (orientation: portrait) {
     #content {
        top: 100px !important;
@@ -250,9 +250,9 @@ section {
         position: relative;
         z-index: 1002;
 		background-image: url('../sitewide/images/jungle-team.jpg');
-		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8) !important; 
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8) !important;
 		}
-        
+
 @media screen and (orientation: portrait) {
     .footer {
        border: black;
@@ -263,7 +263,7 @@ section {
 .eqWrap {
 	display: flex;
 }
-           
+
 .eqWrap h3 a {
                 font-size: calc(0.25vw + 10px);
                 text-decoration:none !important;
@@ -296,17 +296,17 @@ section {
        .eqWrap {
 	             display: inline-block;
                  }
-       
+
        .equalHMWrap {
 	             justify-content: flex-start;
-                 }        
-       
+                 }
+
        .equalHM4 {
 	             width: 100%;
                  position:relative;
                  text-align:center;
                  }
-                 
+
        .equalHM3 {
 	             width: 100%;
                  position:relative;
@@ -318,9 +318,9 @@ section {
                  padding:0px;
                  }
 }
-        
-/* Text choices */   
-        
+
+/* Text choices */
+
 h0 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 8.000em;
@@ -332,8 +332,8 @@ h0 {
 	letter-spacing: 0.0em;
     margin: 0 0 0 0;
     }
-        
-     
+
+
 h1 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 5.000em;
@@ -345,7 +345,7 @@ h1 {
 	letter-spacing: 0.0em;
     margin: 0 0 0 0;
     }
-        
+
 h2 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 2.750em;
@@ -357,7 +357,7 @@ h2 {
 	letter-spacing: 0.0em;
     margin: 0 0 10px 0;
 		}
-        
+
 h3     {
     font-family: 'Spectral', serif;
 	font-size: 1.750em;
@@ -370,8 +370,8 @@ h3     {
     margin: 0 0 10px 0;
         }
 
-h4 { 
-	font-family: 'Lato', sans-serif; 
+h4 {
+	font-family: 'Lato', sans-serif;
 	font-size: 1.111em;
 	font-style:normal;
     font-weight:700;
@@ -382,8 +382,8 @@ h4 {
     margin: 0 0 0px 0;
 		}
 
-h5 { 
-	font-family: 'Lato', sans-serif; 
+h5 {
+	font-family: 'Lato', sans-serif;
 	font-size: 0.750em;
 	font-style:normal;
     font-weight:400;
@@ -393,7 +393,7 @@ h5 {
 	letter-spacing: 0.05em;
     margin: 0 0 0 0;
 		}
-		
+
 h6 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.111em;
@@ -405,11 +405,11 @@ h6 {
 	letter-spacing: 0.0em;
     margin: 0 0 0 0;
     }
-        
+
 p  {
     font-family: 'Lato', sans-serif;
     font-size: 1.000em;
-    font-style:normal; 
+    font-style:normal;
     font-weight:400;
     line-height: 1.5em;
     text-decoration:none;
@@ -419,21 +419,21 @@ p  {
 li  {
     font-family: 'Lato', sans-serif;
     font-size: 1.000em;
-    font-style:normal; 
+    font-style:normal;
     font-weight:300;
     line-height: 1.5em;
     text-decoration:none;
     letter-spacing: 0.02em;
     }
-        
+
 .shad  {
-        text-shadow: 0em 0em 1em rgba(10,10,10,0.50); }
-        
+        text-shadow: 1em 1em 2em rgba(10,10,10,1); }
+
 a:link {color: black;}      /* unvisited link */
        a:visited {color: black;}   /* visited link */
        a:hover {color: black;}     /* mouse over link */
        a:active {color: black;}    /* selected link */
-       
+
 a.under{
   text-decoration: none;
   background-image: linear-gradient(to bottom,rgba(255, 192, 25, 0.9) 50%, rgb(0, 199, 255) 50%);
@@ -441,25 +441,25 @@ a.under{
   background-repeat: repeat-x;
   background-size: 100% .25rem;
 }
-       
+
 @media only screen and (max-width: 1080px) {
    h1 {
        font-size:2.5em; }
-       
+
    h2 {
        font-size:1.7em; }
-       
+
    h3 {
-       font-size:1.2em; } 
-	   
+       font-size:1.2em; }
+
    h4 {
-	    font-size:1em; } 
-		
+	    font-size:1em; }
+
    p {
-    font-size: 0.9em; } 
+    font-size: 0.9em; }
 
 }
-        
+
 /* Text choices */
 
 .gold {
@@ -470,18 +470,18 @@ a.under{
         color: #171717 !important;  }
 .aqua   {
         color: #00C7FF !important; }
-        
+
 .gold-aqua {
         -webkit-text-fill-color: #00C7FF; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color: #FFBB00; }
-        
+
 .a-left {
         text-align:left; !important;}
 .a-right {
-        text-align:right; !important;}         
+        text-align:right; !important;}
 .a-centre {
-        text-align:right; !important;}         
+        text-align:right; !important;}
 
 /* Block options */
 
@@ -508,7 +508,7 @@ a.under{
   -o-justify-content: center;
   justify-content: center;
 }
-  
+
 .flex-horizontally-centred {
     position: relative;
     display: -webkit-flex;
@@ -536,7 +536,7 @@ a.under{
     flex-wrap: wrap;
 }
 
-  
+
 .full-block {
     width: 100%;
     position: relative;
@@ -545,7 +545,7 @@ a.under{
 .cover {
     max-height:500px !important;
      overflow:hidden;}
-  
+
 .large-block {
     width: 89%;
     position: relative;
@@ -579,7 +579,7 @@ a.under{
 .long {
     width: 80%;
 }
-        
+
 #text-section {
         padding:100px;
         position:relative;
@@ -603,7 +603,7 @@ a.under{
 }
 
 .float-right {
-    margin-left:auto; 
+    margin-left:auto;
     margin-right:0;
 }
 
@@ -646,11 +646,11 @@ a.under{
     animation-fill-mode: forwards;
     margin: 0px 10%;
     }
-    
+
 .half-text-block {
     width: 33%;
     margin: auto; }
-    
+
 .tiny-text-block {
     width: 45%;
     margin: auto; }
@@ -687,16 +687,16 @@ img {
         padding: 7%;
         position: relative;
         background-image: url('../sitewide/images/jungle-team.jpg');
-		box-shadow: inset 0 0 0 1000px rgba(235, 235, 235, 0.9) !important; 
+		box-shadow: inset 0 0 0 1000px rgba(235, 235, 235, 0.9) !important;
         }
-        
+
 .profile-img {
         width:75%;
         margin-left:0px;
         margin-bottom: 0px;
         }
-        
-        
+
+
 /* Block options mobile */
 
 
@@ -704,84 +704,84 @@ img {
     section {
 	padding: 1em 1em;
 	}
-    
+
     .half-text-block {
         width: 75%;
         padding:10%; }
     .half-block {
         width: 100%; }
-    
+
     .glance {
         border: 20px solid rgba(255, 192, 25, 0.9);
         padding: 50px;
         position: relative;
         background-image: url('https://images.unsplash.com/photo-1505147704403-c2caf85db293?auto=format&fit=crop&w=1348&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
-		box-shadow: inset 0 0 0 1000px rgba(235, 235, 235, 0.9) !important; 
+		box-shadow: inset 0 0 0 1000px rgba(235, 235, 235, 0.9) !important;
         }
-     
+
     .below-8rem {
     padding-bottom: 4rem;
                     }
     .minus-8rem {
     margin-bottom: -4rem;
                    }
-                   
+
     .a-right {
-	    text-align: left; 
+	    text-align: left;
 	   }
-	   
+
     .small-block {
     width: 100%;
     position:relative;
     padding-bottom: 4rem;
 	}
-	
+
 	.text-block  {
     text-align:center;
     animation-fill-mode: forwards;
     margin: 0 0;
     }
-	
+
 	.text-overlay-block-full {
     position:static;
     top: 100%;
     left: 0%;
     animation-fill-mode: forwards;
 	}
-    
+
     .short {
     width: 100%;
     padding-bottom: 0.5em
 	}
-    
+
     .tiny {
     width: 100%;
 	}
-	
+
 .no-mob {
 	visibility: hidden;
 	height:0;
 	width: 0;
 	}
-    
-}                       
-                       
+
+}
+
 
 /* Height choices */
 
 .high {
       z-index:3;
        }
-       
+
 .middle {
       z-index:2;
        }
-       
+
 .low {
       z-index:1;
        }
-       
-       
+
+
 /* ANIMATED Link */
 
 a.btn-draw {
@@ -894,7 +894,7 @@ a.btn-draw {
 
 
 /* FAQ */
-	
+
 .faq-content {
   margin: 0 auto;
 }
@@ -939,7 +939,7 @@ a.btn-draw {
   z-index: 5;
   font-size: 2em;
   line-height: 100%;
-  -webkit-user-select: none;    
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
@@ -1015,7 +1015,7 @@ a.btn-draw {
 button {
      background:none!important;
      color:inherit;
-     border:none; 
+     border:none;
      padding:0!important;
      /*border is optional*/
      cursor: pointer;
