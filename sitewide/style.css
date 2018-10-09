@@ -222,7 +222,7 @@ body {
 }
 
 .blur {
-		transition:.8s ease-in-out;
+		transition:.8s ease-in;
 	}
 
 .blur.on {
