@@ -222,6 +222,16 @@ body {
       position: absolute;
     }
 
+@media only screen and (max-width: 1280px) {
+			.scene-h1 {
+				font-size: 8.000em;
+			}
+		}
+@media only screen and (max-width: 1080px) {
+			.scene-h1 {
+				font-size: 6.000em;
+			}
+		}
 
 /* MAIN CONTENT */
 
