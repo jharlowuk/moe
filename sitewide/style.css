@@ -200,6 +200,18 @@ body {
         top:100%;
 }
 
+.scene-h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 10.000em;
+	font-style:normal;
+	font-weight:700;
+	text-indent:0px;
+		line-height: 1.1em;
+	color: #0A0A0A;
+	letter-spacing: 0.0em;
+		margin: 0 0 0 0;
+}
+
 .top-fade {
       -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0,0,0,0)));
       mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
