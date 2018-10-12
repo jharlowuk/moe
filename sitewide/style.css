@@ -937,6 +937,11 @@ a.sm {
   top: -27px;
 }
 
+.btn-repos-pro {
+	position: relative;
+  top: -35px;
+}
+
 /* Scroll focus */
 
 *:focus {
