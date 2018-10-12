@@ -503,7 +503,7 @@ a.under{
 .a-right {
         text-align:right; !important;}
 .a-centre {
-        text-align:right; !important;}
+        text-align:center; !important;}
 
 /* Block options */
 
@@ -839,6 +839,10 @@ a.sm {
   font-size: 0.6em !important;
 }
 
+a.lg {
+  font-size: 1.0em !important;
+}
+
 @media only screen and (max-width: 960px) {
    a.btn-draw {
        font-size:0.6em; }
@@ -853,6 +857,10 @@ a.sm {
   overflow: hidden;
   -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.drawn {
+	background: rgba(245,203,92, 0.75);
 }
 
 .btn-draw:after {
@@ -1137,4 +1145,14 @@ button {
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
+}
+
+/*landscape nav*/
+
+.landscape-nav {
+	position: absolute;
+  bottom: 150px;
+  display: block;
+  z-index: 1;
+	opacity: 1;
 }
