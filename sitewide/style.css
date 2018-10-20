@@ -461,6 +461,9 @@ h10  {
 .shad  {
         text-shadow: 0em 0em 1em rgba(0,0,0,0.5); }
 
+				.w-shad  {
+				        text-shadow: 0em 0em 1em rgba(255,255,255,0.35); }
+
 a:link {color: black;}      /* unvisited link */
        a:visited {color: black;}   /* visited link */
        a:hover {color: black;}     /* mouse over link */
