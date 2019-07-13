@@ -314,6 +314,13 @@ section {
     padding: 0px;
 }
 
+
+.faded {
+	opacity: 0.4;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 @media only screen and (max-width: 960px) {
        .eqWrap {
 	             display: inline-block;
@@ -418,7 +425,7 @@ h5 {
 
 h6 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.111em;
+	font-size: 1.5em;
 	font-style:normal;
 	font-weight:700;
 	text-indent:0px;
@@ -599,6 +606,10 @@ a.under{
 .tiny-block {
    width:40%;
    position:relative; }
+
+.micro {
+	     width: 5%;
+	 }
 
 .mini {
     width: 15%;
