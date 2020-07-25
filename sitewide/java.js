@@ -40,7 +40,3 @@ $(function(){
 		verticalOffset: 0
 	});
 });
-
-$.stellar({
-  responsive: true
-});
