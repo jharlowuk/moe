@@ -687,6 +687,13 @@ a.under{
     width: 80%;
 }
 
+.icon {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	width: 20%;
+}
+
 #text-section {
         padding:100px;
         position:relative;
@@ -935,7 +942,8 @@ img {
 	.text-overlay-block-well {
     position: relative;
     top: 30px;
-    left: 5%;
+    left: 0%;
+		width: 80%!important;
     animation-fill-mode: forwards;
 	}
 
