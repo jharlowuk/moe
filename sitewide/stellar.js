@@ -1,6 +1,6 @@
 //Screen size
-if ( $(window).width() > 739) {      
-  //Add your javascript for large screens here 
+if ( $(window).width() > 1000) {      
+  //Add your javascript for large screens here
 
 
 //Parralax
@@ -409,7 +409,7 @@ if ( $(window).width() > 739) {
 
 				offsetLeft = $this.offset().left - marginLeft - scrollLeft;
 				offsetTop = $this.offset().top - marginTop - scrollTop;
-				
+
 				// Calculate the offset parent
 				$this.parents().each(function() {
 					var $this = $(this);
@@ -607,7 +607,7 @@ if ( $(window).width() > 739) {
 					ticking = true;
 				}
 			};
-			
+
 			this.$scrollElement.bind('scroll.' + this.name, requestTick);
 			requestTick();
 		},
@@ -658,7 +658,7 @@ if ( $(window).width() > 739) {
 
 //Screen size
 
-} 
+}
 else {
-  //Add your javascript for small screens here 
+  //Add your javascript for small screens here
 }

@@ -654,6 +654,11 @@ a.under{
     position: relative;
 }
 
+.thumb-block {
+    width: 55%;
+    position: relative;
+}
+
 .half-block {
     width: 50%;
     position: relative;
@@ -673,6 +678,10 @@ a.under{
 
 .tiny {
     width: 30%;
+}
+
+.small {
+    width: 42.5%;
 }
 
 .short {
@@ -734,6 +743,10 @@ a.under{
     position: absolute;
 		top: -35%;
 	}
+
+	.image-overlay-block-m {
+	    position: absolute;
+		}
 
 .text-overlay-block {
     position: absolute;
@@ -854,6 +867,14 @@ img {
 		box-shadow: inset 0 0 0 1000px rgba(235, 235, 235, 0.9) !important;
         }
 
+.trip1 {
+				border: 1vw solid rgba(0, 0, 0, 0.9);
+				padding: 7%;
+				position: relative;
+				background-image: url('../our-expeditions/explorer/images/cw.jpg');
+				box-shadow: inset 0 0 0 1000px rgba(235, 235, 235, 0.5) !important;
+				}
+
 .profile-img {
         width:75%;
         margin-left:0px;
@@ -926,6 +947,12 @@ img {
 	padding-bottom: 1rem;
 }
 
+.thumb-block {
+    width: 100%;
+    position: relative;
+			padding-bottom: 1rem;
+}
+
 	.text-block  {
     text-align:center;
     animation-fill-mode: forwards;
@@ -963,6 +990,10 @@ img {
     width: 100%;
 	}
 
+	.small {
+	    width: 100%;
+	}
+
 .no-mob {
 	visibility: hidden;
 	height:0;
@@ -978,6 +1009,7 @@ img {
 		height:0;
 		width: 0;
 		}
+
 
 	}
 
