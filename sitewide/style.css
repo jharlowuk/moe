@@ -1387,6 +1387,10 @@ button {
 
 /* Enroll Checkbox's */
 
+fieldset {
+	border: none;
+}
+
 
 .container{
   display: flex;
