@@ -187,33 +187,39 @@
     <p>&nbsp;</p>
 
 
-	 	<h3 class="a-left">My name is <input type="text" name="Name" placeholder="your name" data-subline="For example: <em>John Appleseed</em> or <em>Kate Smith</em>"/>.
+	 	<h3 class="a-left"><label>My name is <input type="text" name="Name" placeholder="your name" data-subline="For example: <em>John Appleseed</em> or <em>Kate Smith</em>"/>.</label>
 
-	 	<br><br>I am
-    <input type="text" name="Age" placeholder="your age" data-subline="For example: <em>18</em> or <em>24</em>"/>
-    and
-	 	  	<select>
-	 	  		<option value="1" selected>Male</option>
-	 	  		<option value="2">Female</option>
-	 	  		<option value="3">Non-binary</option>
-          <option value="4">Prefer not to say</option>
+	 	<br><br><label>I am
+    <input type="text" name="Age" placeholder="your age" data-subline="For example: <em>19</em> or <em>24</em>"/></label>
+    <label>and
+	 	  	<select name="Gender">
+	 	  		<option value="Male" selected>Male</option>
+	 	  		<option value="Female">Female</option>
+	 	  		<option value="Non-binary">Non-binary</option>
+          <option value="Prefer not to say">Prefer not to say</option>
 	 	  	</select>.
+    </label>
 
-    <br><br>I consider myself to be
-    <select>
-      <option value="1" selected>not at all</option>
-      <option value="2">slightly</option>
-      <option value="3">fairly</option>
-      <option value="4">very</option>
+    <br><br>
+    <label>I consider myself to be
+    <select name="Experience">
+      <option value="Not at all" selected>not at all</option>
+      <option value="Slightly">slightly</option>
+      <option value="Fairly">fairly</option>
+      <option value="Very">very</option>
     </select>
-    experienced at hiking. My favorite trip so far has been <input type="text" name="trip" placeholder="" data-subline="For example: <em>my Bronze DofE</em> or <em>Highland Way</em>"/>.
+    experienced at hiking.</label>
 
-    <br><br>It is best to contact me by
-	 	  	<select>
-	 	  		<option value="1">phone</option>
-	 	  		<option value="2" selected>email</option>
+    <label>My favorite trip so far has been <input type="text" name="trip" placeholder="" data-subline="For example: <em>my Bronze DofE</em> or <em>Highland Way</em>"/>.</label>
+
+    <br><br>
+    <label>It is best to contact me by
+	 	  	<select name="Type of contact">
+	 	  		<option value="Phone">phone</option>
+	 	  		<option value="Email" selected>email</option>
 	 	  	</select>
-	 	at <input type="text" name="Contact" placeholder="your contact details" data-subline="For example: <em>+44 XXXX-XXXXXX</em> or <em>info@example.com</em>"/>.
+    </label>
+	 	<label>at <input type="text" name="Contact" placeholder="your contact details" data-subline="For example: <em>+44 XXXX-XXXXXX</em> or <em>info@example.com</em>"/>.</label>
 	 	<br><br></h3>
 
 
