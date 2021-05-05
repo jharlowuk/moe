@@ -204,7 +204,7 @@ body {
 
 .scene-h1 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 10.000em;
+	font-size: 9.500em;
 	font-style:normal;
 	font-weight:700;
 	text-indent:0px;
@@ -238,7 +238,7 @@ body {
 
 @media only screen and (max-width: 1280px) {
 			.scene-h1 {
-				font-size: 7.500em;
+				font-size: 8.000em;
 			}
 
 			.ces-h1 {
