@@ -91,10 +91,23 @@
 
   <div class="flex-block middle">
     <div class="half-block right content-block low" data-stellar-ratio="1">
-      <div class="ani translate-left">
-           <img src="sitewide/trails-logo.jpg"></img>
-      </div>
+
+			<div class="se-slide">
+			   <div class="container">
+			      <div class="slide"><img src="images/l-1.jpg" style="width:100%"></div>
+			      <div class="slide"><img src="images/l-2.jpg" style="width:100%"></div>
+			      <div class="slide"><img src="images/l-3.jpg" style="width:100%"></div>
+			      <div class="slide"><img src="images/l-4.jpg" style="width:100%"></div>
+						<div class="slide"><img src="blank" style="width:100%"></div>
+			   </div>
+			 </div>
+
+
+							<div class="logo-home">
+				           <img src="sitewide/trails-logo.jpg"></img>
+				      </div>
     </div>
+
 
   	 <div class="text-overlay-block-start high" data-stellar-ratio="0.8">
    	 	<h1 class="scene-h1 a-left no-mob">Hello!<br>We are </h1>
@@ -335,6 +348,95 @@ $('a[href*="#"]')
     }
   });
 
+
+/* SLIDESHOW */
+
+var fromSlide = 1;
+            var toSlide = 1;
+            var interval = null;
+            var frequency = 3000;
+            var slides = document.querySelectorAll(".slide");
+            var container = document.querySelector(".container");
+            var canAnimate = true;
+            var direction = "toLeft";
+            var animationSpeed = 2000;
+
+            var stopInterval = function() {
+                clearInterval(interval);
+            };
+
+            var startInterval = function() {
+                interval = setInterval(function() {
+                    changeSlide('relative', direction === "toLeft" ? 1 : -1);
+                }, frequency);
+            };
+
+            var animateSlide = function(from, to) {
+                console.log(from, to, direction)
+                for(var i = 0, ln = slides.length; i < ln; i++) {
+                    slides[i].style.display = "none";
+                    slides[i].style.animation = "";
+                }
+                slides[from - 1].style.display = "block";
+                slides[to - 1].style.display = "block";
+                if(direction === "toLeft") {
+                    slides[from - 1].style.animation = "toLeft " + animationSpeed + "ms forwards";
+                    slides[to - 1].style.animation = "fromRight " + animationSpeed + "ms forwards";
+                } else if(direction === "toRight") {
+                    slides[from - 1].style.animation = "toRight " + animationSpeed + "ms forwards";
+                    slides[to - 1].style.animation = "fromleft " + animationSpeed + "ms forwards";
+                }
+            }
+
+            var determineDirection = function(type, num) {
+                if(type === "relative" && num === 1) {
+                    direction = "toLeft";
+                } else if(type === "relative" && num === -1) {
+                    direction = "toRight";
+                } else if(type === "absolute" && fromSlide < toSlide) {
+                    direction = "toLeft";
+                } else if(type === "absolute" && fromSlide > toSlide) {
+                    direction = "toRight";
+                }
+            };
+
+            var changeSlide = function(type, num) {
+                if(canAnimate) {
+                    stopInterval();
+                    fromSlide = toSlide;
+                    toSlide = type === "absolute" ? num : toSlide += num;
+                    toSlide = toSlide > slides.length ? 1 : toSlide < 1 ? slides.length : toSlide;
+                    determineDirection(type, num);
+                    animateSlide(fromSlide, toSlide);
+                    startInterval();
+                }
+            }
+
+            var onAnimationStart = function() {
+                canAnimate = false;
+            };
+
+            var onAnimationEnd = function() {
+                canAnimate = true;
+            };
+
+            var removeListeners = function() {
+                container.removeEventListener('animationstart', onAnimationStart);
+                container.removeEventListener('animationend', onAnimationEnd);
+            };
+
+            var addListeners = function() {
+                container.addEventListener('animationstart', onAnimationStart);
+                container.addEventListener('animationend', onAnimationEnd);
+            };
+
+            var init = function() {
+                addListeners();
+                changeSlide('absolute', 1);
+                startInterval();
+            };
+
+            init();
 
 </script>
 
