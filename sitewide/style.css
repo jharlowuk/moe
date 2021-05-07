@@ -143,7 +143,7 @@ body {
 #header-sroll {
     position: fixed;
     height: 0px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.9);
     width: 100%;
     -ms-transition:     all 0.3s ease-out;
     -moz-transition:    all 0.3s ease-out;
@@ -166,6 +166,7 @@ body {
     -webkit-transition: all 0.5s ease-out;
     -o-transition:      all 0.5s ease-out;
     transition:         all 0.5s ease-out;
+		filter: drop-shadow(0 0 0.6rem rgb(0, 0, 0, 0.4));
 }
 
 #header-sroll img.on {
